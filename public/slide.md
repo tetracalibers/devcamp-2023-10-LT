@@ -13,8 +13,8 @@ Three.jsなどのライブラリは一切使わずに、WebGLのラッパーを�
 # Fragment Shaderはローカル視点
 
 ```js
-for (let i = 0; i < imgWidth; i++) {
-  for (let j = 0; j < imgHeight; j++) {
+for (let u = 0; u < imgWidth; u++) {
+  for (let v = 0; v < imgHeight; v++) {
     // ここの処理を書くようなイメージ
   }
 }
