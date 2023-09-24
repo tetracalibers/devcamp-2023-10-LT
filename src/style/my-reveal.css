@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+
+:root {
+  --r-main-font: 'Zen Kaku Gothic New', sans-serif;
+  --r-heading-font: 'Zen Kaku Gothic New', sans-serif;
+}
+
+.reveal pre {
+  font-size: 0.9em;
+}
