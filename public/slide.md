@@ -334,7 +334,7 @@ Note:
 
 # step.2 - ボロノイの境界線を描画
 
-```glsl [1-2|4,7,9-11|13-17]
+```glsl [1-2|4,7,9-11]
 vec3 edge = roberts(uRandomVoronoiTex, uv, texSize).rgb;
 float edgeStrength = (edge.r + edge.g + edge.b) / 3.0;
 
