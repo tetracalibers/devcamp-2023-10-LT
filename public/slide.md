@@ -158,7 +158,7 @@ Note:
 
 ---
 
-# more step - エッジ付近に元画像の色を乗せる
+# step.4 - エッジ付近に元画像の色を乗せる
 
 ```glsl
 float edgeStrength = (edge.r + edge.g + edge.b) / 3.0;
