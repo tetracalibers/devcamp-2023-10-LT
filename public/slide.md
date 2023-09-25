@@ -78,8 +78,22 @@ Note:
 
 # step.2 - エッジを抽出
 
-```glsl [13-16|1-11]
-// prewittフィルタ
+```glsl
+// エッジ抽出
+vec3 edgeColor = applyKernelXY(uPrevTex, texelSize, uv, kernelX, kernelY);
+// 白黒に
+edgeColor = vec3(toMonochrome(edgeColor));
+```
+
+Note:
+
+それとは別に、エッジ、つまり輪郭だけを抽出したテクスチャを生成します。
+
+---
+
+## Prewittフィルタ
+
+```glsl
 float[9] kernelX = float[](
   -1.0, 0.0, 1.0,
   -1.0, 0.0, 1.0,
@@ -90,17 +104,13 @@ float[9] kernelY = float[](
   0.0, 0.0, 0.0,
   1.0, 1.0, 1.0
 );
-
-// エッジ抽出
-vec3 edgeColor = applyKernelXY(uPrevTex, texelSize, uv, kernelX, kernelY);
-// 白黒に
-edgeColor = vec3(toMonochrome(edgeColor));
 ```
+
+<img src="/image/ref/edge-detection/prewitt.png" class="r-stretch" />
 
 Note:
 
-それとは別に、エッジ、つまり輪郭だけを抽出したテクスチャを生成します。
-エッジ抽出の手法はいろいろありますが、ここでは、線がはっきり太く滑らかに検出でき、あえてノイズの多いプレヴィットフィルタを使っています。
+エッジ抽出の手法はいろいろありますが、ここでは、明るさが変化している箇所を滑らかに検出でき、ノイズを強調せずに済むプレヴィットフィルタを使っています。
 
 ---
 
