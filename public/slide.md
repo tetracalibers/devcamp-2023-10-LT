@@ -177,7 +177,7 @@ mix関数では、第三引数の値が0に近いほど第一引数の値が優�
 
 ---
 
-# sprayColor - 色むらを演出する
+## sprayColor - 色むらを演出する
 
 ```glsl
 vec3 spray(sampler2D tex, vec2 uv, vec2 txSize, float spread, float mixRatio) {
@@ -199,7 +199,7 @@ Note:
 
 ---
 
-# pastelColor - 淡い色に変換する
+## pastelColor - 淡い色に変換する
 
 ```glsl
 vec3 toPastel(vec3 color, float strength) {
@@ -299,7 +299,7 @@ Note:
 
 <!-- .element data-transition="fade" -->
 
-# 青みがかったボロノイ図
+## 青みがかったボロノイ図
 
 <img src="/image/step/standglass/random-blue-voronoi.png" class="r-stretch" />
 
@@ -316,7 +316,7 @@ Note:
 
 <!-- .element data-transition="fade" -->
 
-# 画像上の色を使ったボロノイ図
+## 画像上の色を使ったボロノイ図
 
 <img src="/image/step/standglass/random-image-voronoi.png" class="r-stretch" />
 
