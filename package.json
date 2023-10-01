@@ -12,6 +12,7 @@
     "@types/reveal.js": "^4.4.2",
     "reveal.js": "^4.5.0",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vite-plugin-static-copy": "^0.17.0"
   }
 }
