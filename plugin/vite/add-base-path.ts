@@ -8,8 +8,8 @@ const replaceSlideMdPath = (html: string) => {
 export default function addBasePathPlugin(): Plugin {
   return {
     name: 'add-base-path',
-    transformIndexHtml(html) {
-      return replaceSlideMdPath(html)
+    transform(code, id) {
+      return id.endsWith('.html') ? replaceSlideMdPath(code) : null
     },
   }
 }

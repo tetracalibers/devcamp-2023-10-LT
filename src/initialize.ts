@@ -7,7 +7,10 @@ import RevealMarkdown from 'reveal.js/plugin/markdown/markdown'
 import RevealHighlight from 'reveal.js/plugin/highlight/highlight'
 import RevalNotes from 'reveal.js/plugin/notes/notes'
 
-Reveal.initialize({
-  history: true,
-  plugins: [RevealMarkdown, RevalNotes, RevealHighlight],
-})
+export const initialize = ({ showNotes }: { showNotes: boolean }) => {
+  Reveal.initialize({
+    history: true,
+    showNotes,
+    plugins: [RevealMarkdown, RevalNotes, RevealHighlight],
+  })
+}
