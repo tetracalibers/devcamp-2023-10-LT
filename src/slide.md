@@ -561,9 +561,9 @@ Note:
 
 ---
 
-# アプリ
+# Imagl Editor
 
-TODO アプリのスクショ
+<img src="/image/preview/editor-preview.png" class="r-stretch" style="box-shadow: 0px 25px 80px rgba(0, 0, 0, 0.15);" />
 
 Note:
 
