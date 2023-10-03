@@ -8,4 +8,4 @@
 ### スライド
 
 - スライドのみ： https://tetracalibers.github.io/devcamp-2023-10-LT/
-- 原稿つきスライド： https://tetracalibers.github.io/devcamp-2023-10-LT/with-note/
+- 発表原稿つき： https://tetracalibers.github.io/devcamp-2023-10-LT/with-note/
